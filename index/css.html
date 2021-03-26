@@ -1,0 +1,318 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="theme-color" content="teal">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
+
+<title>Ai-webinar</title>
+</head>
+<body>
+  <header class="header">
+ Ai-webinar
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="blog.html"  >Blog</a></li>
+    <!-- <li><a href="contact.html">Contact</a></li> -->
+    <li><a href="creatives.html" class="active">Creatives</a></li>
+    
+  </ul>
+</header>
+
+
+<style>
+a{
+  text-decoration: none;
+  color:#000;
+}
+.active{
+color:#679b9b;
+}
+a:hover{
+  color:#679b9b;
+}
+h1{
+  font-family: 'Viktorie';
+  font-size: 42px;
+}
+header{
+  padding:0;
+}
+body{
+  background-color: ;
+  margin:0;
+padding: 0px;
+
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1d1d1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #f4f5f6;
+}
+
+
+/* Start of Header Styling*/
+.header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height:70px;
+  z-index: 3;
+
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow:auto;
+  background-color: #f1d1d1;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 5px 30px;
+}
+
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0px;
+  font-size: 22px;
+  /* top:30px; */
+  margin-top: 10px;
+  transition: max-height .5s ease-out;
+  font-family: 'Space Grotesk';
+}
+.header .menu li button{
+  background-color: transparent;
+  border:none;
+  font-size: 22px;
+  font-family: 'Space Grotesk';
+  margin-right: 10px;
+  margin-top: 0;
+}
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 42px 30px;
+  position: relative;
+  user-select: none;
+}
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 25px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 340px;
+  background-image: linear-gradient(#f1d1d1,#fff);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 70em) {
+  .header h1{
+    font-size: 50px;
+  }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .menu li button{
+    background-color: transparent;
+  }
+}
+
+.red_button {
+background-color: blue;
+margin: 10px
+width: 80%;
+color: white;
+padding: 10px 66px;
+}
+p {
+font-family: helvetica neue;
+font-weight: 100;
+}
+</style>
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+<h1>Ai-webinar</h1>
+<p>We train our users till they're the absolute best in Programming and build them to be the next generation of programmers.</p>
+<br><br>
+<a href="course.html" class="red_button">Start learning</a>
+<div class="course_padding">
+<h3>Start learning</h3>
+
+<h3><i class="fab fa-html5"></i>HTML</h3>
+
+<hr>
+<h3><i class="fab fa-css3"></i>CSS</h3>
+
+<hr>
+<h3><i class="fab fa-react"></i>React js</h3>
+
+<hr>
+<h3><i class="fab fa-js"></i>Javascript</h3>
+
+<hr>
+</div>
+
+<div class="content_1">
+<h2>Effective teaching technique</h2>
+<p>Ai-webinar has adopted the effective and disruptive method of teaching from powercoms.<br>The realization that programming is now beyond theory but things needs to get more real and reasonable with constant practice and demos </p>
+<a href="#" class="red_button">innovative ideas</a>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+    .content_1 {
+width: 93.7%;
+height: 70%;
+background-color: teal;
+color: white;
+font-family: courier;
+padding: 10px;
+}
+.course_padding {
+padding: 20px;
+}
+.fab {
+color: blue;
+margin-right: 20px;
+font-size: 30px;
+transition: 2s;
+}
+.fa-react:hover {
+color:teal !important;
+margin-right: 20px;
+font-size: 30px;
+}
+.fa-css3:hover {
+color:teal !important;
+margin-right: 20px;
+font-size: 30px;
+}
+.fa-js:hover {
+color:teal !important;
+margin-right: 20px;
+font-size: 30px;
+}
+.fa-html5:hover {
+color:teal !important;
+margin-right: 20px;
+font-size: 30px;
+}
+
+hr {
+color: #333;
+}
+</style>
+
+
+
+
+
+
+
+</html>
